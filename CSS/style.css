@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* BODY */
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -12,7 +11,6 @@ body {
     color: #e2e8f0;
     min-height: 100vh;
 }
-
 /* HEADER */
 header {
     background: rgba(255, 255, 255, 0.05);
@@ -21,14 +19,12 @@ header {
     padding: 25px;
     text-align: center;
 }
-
 /* TÍTULO */
 header h1 {
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 2px;
 }
-
 /* MENU */
 menu ul {
     list-style: none;
@@ -37,17 +33,14 @@ menu ul {
     gap: 25px;
     padding: 10px;
 }
-
 menu li{
 position:relative;
 }
-
 menu li:not(:last-child)::after{
 content:"•";
 margin-left:25px;
 color:#60a5fa;
 }
-
 /* LINKS MENU */
 menu a {
     position: relative;
@@ -58,12 +51,10 @@ menu a {
     padding: 5px 8px;
     transition: 0.3s;
 }
-
 menu a:hover {
     color: #38bdf8;
     transform: translateY(-2px);
 }
-
 /* HOVER MENU */
 menu ul {
     display: flex;
@@ -71,7 +62,6 @@ menu ul {
     gap: 40px;
     padding: 10px;
 }
-
 /* LINHA ANIMADA */
 menu a::after {
     content: "";
@@ -83,65 +73,52 @@ menu a::after {
     background: linear-gradient(90deg, #3b82f6, #8b5cf6);
     transition: 0.4s;
 }
-
 /* ANIMAÇÃO */
 menu a:hover::after {
     width: 100%;
 }
-
 /* CONTEÚDO */
 main {
     max-width: 1100px;
     margin: 40px auto;
     padding: 40px;
-
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(10px);
-
     border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.6);
-
     animation: fadeUp 0.8s ease;
 }
-
 /* TÍTULOS */
 h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #60a5fa;
 }
-
 h3 {
     margin-top: 25px;
     color: #a78bfa;
 }
-
 /* PARÁGRAFOS */
 p {
     line-height: 1.6;
     margin-bottom: 15px;
 }
-
 /* LINKS */
 a {
     color: #38bdf8;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
 /* LISTAS */
 ul,
 ol {
     margin-left: 25px;
     margin-bottom: 15px;
 }
-
 /* FORMULÁRIO */
 fieldset {
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -149,12 +126,10 @@ fieldset {
     padding: 20px;
     margin-top: 20px;
 }
-
 legend {
     color: #60a5fa;
     font-weight: bold;
 }
-
 /* INPUTS */
 input {
     padding: 8px;
@@ -162,7 +137,6 @@ input {
     border: none;
     margin: 5px;
 }
-
 /* BOTÃO */
 input[type=submit] {
     background: linear-gradient(90deg, #3b82f6, #8b5cf6);
@@ -172,13 +146,11 @@ input[type=submit] {
     padding: 10px 18px;
     transition: 0.3s;
 }
-
 /* HOVER BOTÃO */
 input[type=submit]:hover {
     transform: scale(1.05);
     box-shadow: 0 0 12px rgba(139, 92, 246, 0.8);
 }
-
 /* MAPA */
 iframe {
     width: 100%;
@@ -186,7 +158,6 @@ iframe {
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
-
 /* FOOTER */
 footer {
     text-align: center;
@@ -195,22 +166,17 @@ footer {
     background: rgba(255, 255, 255, 0.04);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 /* ANIMAÇÃO */
 @keyframes fadeUp {
-
     from {
         opacity: 0;
         transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
-
 }
-
 .botao {
     background: linear-gradient(90deg, #3b82f6, #8b5cf6);
     padding: 12px 25px;
@@ -220,18 +186,15 @@ footer {
     text-decoration: none;
     transition: 0.3s;
 }
-
 .botao:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(139, 92, 246, 0.8);
 }
-
 .banner img {
     width: 100%;
     border-radius: 15px;
     transition: 0.5s;
 }
-
 .banner img:hover {
     transform: scale(1.02);
 }
